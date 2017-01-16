@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="vue.js"></script>
+</head>
+<body>
+<h1>最近的vue.js版本</h1>
+<div id="versions">
+	<template v-for="branch in branchs"  >
+		<input type="radio" name="gg" :value="branch"  v-model="currentBranch">
+		</input>
+		<label :for="branch">{{branch}}</label>
+
+	</template >
+<p>{{currentBranch}}</p>
+</div>
+	<script src="app.js"></script>
+</body>
+</html>
