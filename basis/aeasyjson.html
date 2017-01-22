@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>a json demo</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var book={
+		"title":["mingzi","dshdjhs","sadasdasdasds","sdsadas"],
+		"author":"gaolei",
+		"eidtion":3,
+		"year":2019,
+		// toJSON:function () {
+		// 	return this.year;
+		// }
+	}
+	// var jsonText=JSON.stringify(book, ["title","year"]);
+	//var 
+	var jsonText=JSON.stringify(book,function (key,value) {
+		switch(key) {
+			case("title"):
+			return value.join("0-0");
+			default :
+				return value;
+		}
+	},"________");
+	alert(jsonText);
+	</script>
+</body>
+</html>
