@@ -1,0 +1,75 @@
+.db_body{
+	display: flex;
+	flex-direction: column;
+	min-height: 300vh;
+}
+header{
+	flex: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #545652;
+}
+header a{
+	margin: 0px 10px 0px 10px ;
+	font-size: 12px;
+	color: #FFFFFF;
+	opacity: 0.65;
+}
+header a:hover{
+	opacity: 1;
+}
+.header_left{
+}
+.header_right{
+}
+main{
+	flex: 100;
+	display: flex;
+	flex-direction: column;
+}
+nav{
+	flex: 1;
+	display: flex;
+	background: #F0F3F5;
+	height:14px
+}
+.nav_left{
+	border: 1px solid red;
+	flex: 4;
+	justify-content: flex-end;
+	display: flex;
+	align-items: center;
+}
+.nav_left_left{
+	border: 1px solid yellow;
+	flex: 0;
+	
+}
+.nav_left_right{
+	border: 1px solid yellow;
+	flex: 0;
+	
+}
+.year_movie{
+	display: block;
+	width: 190px;
+	height: 90px;
+	
+	background: url(https://img3.doubanio.com/f/movie/9f89b66fd864158832aa65002525bb34fb029a56/pics/movie/events/annual2016/ad_web.png)no-repeat;
+	background-size: 100% 100%;
+	background-size: cover;
+}
+.nav_right{
+	/*margin-right: 10%;*/
+	border: 1px solid red;
+	flex: 1;
+}
+
+others{
+	border: 1px solid red;
+	flex: 14;
+}
+footer{
+	flex: 5;
+}
