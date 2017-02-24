@@ -35,35 +35,87 @@ nav{
 	height:14px
 }
 .nav_left{
-	border: 1px solid red;
 	flex: 4;
 	justify-content: flex-end;
 	display: flex;
 	align-items: center;
 }
+.common_width{
+	width: 950px;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+}
 .nav_left_left{
-	border: 1px solid yellow;
 	flex: 0;
+	display: flex;
+	flex-direction: column;
+}
+.nav_ll_top{
+	width: 660px;
+	display: flex;
+	flex: 3;
+	align-items: center;
+	justify-content: flex-start;
+}
+.word_icon{
+	line-height: 56px;
+	flex: 1.8;
+	background: url(https://img3.doubanio.com/f/shire/81252980276323482cf7ec03df52a5c5eb98f6d3/pics/nav/lg_movie_a12_2.png) center center no-repeat;
+	background-size: contain;
+	display: block;
+	width: 145px ;
+	height: 56px;
+}
+.search{
+	height: 31px;
+	margin: 15px 0px 15px 30px;
+	flex: 8;
+	display: flex;
+	box-shadow: 1px 1px darkgray;
+}
+.search_text{
 	
+	border: none;
+	outline: medium;
+	flex: 8;
+}
+.search_text:focus{
+	border: none;
+	border-style: none;
+}
+.search_button{
+	display: block;
+	width: 37px;
+	height: 35px;
+	background: url(https://img3.doubanio.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png) left bottom no-repeat ;
+}
+.nav_ll_bottom{
+	flex: 1;
+	margin: 10px 0px 4px 0px;
+}
+.nav_ll_bottom a{
+	flex: 1;
+	margin-right: 20px;
+	color: #3377AA;
+}
+.nav_ll_bottom a:hover{
+	background: #3377AA;
+	color: #FFFFFF;
 }
 .nav_left_right{
-	border: 1px solid yellow;
 	flex: 0;
-	
 }
 .year_movie{
 	display: block;
 	width: 190px;
 	height: 90px;
-	
 	background: url(https://img3.doubanio.com/f/movie/9f89b66fd864158832aa65002525bb34fb029a56/pics/movie/events/annual2016/ad_web.png)no-repeat;
 	background-size: 100% 100%;
 	background-size: cover;
 }
 .nav_right{
-	/*margin-right: 10%;*/
-	border: 1px solid red;
-	flex: 1;
+	flex: 0.8;
 }
 
 others{
