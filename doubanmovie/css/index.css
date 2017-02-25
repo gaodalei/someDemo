@@ -3,6 +3,7 @@
 	flex-direction: column;
 	min-height: 300vh;
 }
+/*最上层header*/
 header{
 	flex: 1;
 	display: flex;
@@ -19,28 +20,167 @@ header a{
 header a:hover{
 	opacity: 1;
 }
-.header_left{
-}
-.header_right{
-}
+/*中间主要内容区*/
 main{
 	flex: 100;
 	display: flex;
+	justify-content: center;
+}
+/*公用宽度*/
+.mid{
+	width: 950px;
+	display: flex;
+	border: 1px solid red;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.nav{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #F0F3F5;
+}
+.nav_left{
+	flex: 8;
+	display: flex;
 	flex-direction: column;
 }
-nav{
+.nav_left_top{
+	display: flex;
+	align-items: center;
+}
+.word_icon{
+	line-height: 56px;
+	background: url(https://img3.doubanio.com/f/shire/81252980276323482cf7ec03df52a5c5eb98f6d3/pics/nav/lg_movie_a12_2.png) center center no-repeat;
+	background-size: contain;
+	display: block;
+	width: 145px ;
+	height: 30px;
+}
+.search{
+	height: 31px;
+	margin: 15px 0px 15px 30px;
+	width: 500px;
+	display: flex;
+	box-shadow: 1px 1px darkgray;
+}
+.search_text{
+	border: none;
+	outline: medium;
+	flex: 8;
+}
+.search_text:focus{
+	border: none;
+	border-style: none;
+}
+.search_button{
+	display: block;
+	width: 37px;
+	height: 35px;
+	background: url(https://img3.doubanio.com/f/shire/44552ac9f592ad9d2ef5c8ae708533990e94b605/pics/nav1/nav_mv_bg.png) left bottom no-repeat ;
+}
+.nav_left_bottom{
+	flex: 1;
+	margin: 10px 0px 0px 0px;
+}
+.nav_left_bottom a{
+	flex: 1;
+	margin-right: 20px;
+	color: #3377AA;
+}
+.nav_left_bottom a:hover{
+	background: #3377AA;
+	color: #FFFFFF;
+}
+.nav_right{
+	flex: 1.5;
+}
+.year_movie{
+	display: block;
+	width: 190px;
+	height: 120px;
+	background: url(https://img3.doubanio.com/f/movie/9f89b66fd864158832aa65002525bb34fb029a56/pics/movie/events/annual2016/ad_web.png)center center no-repeat;
+	background-size: contain;
+}
+.content{
+	flex: 14;
+	display: flex;
+}
+.content_left{
+	border: 1px solid red;
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	margin-right: 20px;
+}
+.hot_movie{
+	margin-top: 42px;
+	height: 320px;
+	border: 1px solid red;
+}
+.hot_movie_top{
+	height: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.hot_top_left a{
+	margin-left: 10px;
+	font-size: 10px;
+	color: #3377AA;
+}
+.hot_top_left a:hover{
+	background: #3377AA;
+	color: #FFFFFF;
+}
+.hot_top_right{
+	display: flex;
+}
+.num_left{
+	display: block;
+	width: 18px;
+	height: 18px;
+	margin-left: 10px;
+	margin-right: 5px;
+	background: url(https://img3.doubanio.com/f/movie/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png)left top no-repeat;
+}
+.num_right{
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(https://img3.doubanio.com/f/movie/708be21a7bb2d0f21419dc4e2e2fde8b21ad661a/pics/movie/slide_swithc_2.png)right top no-repeat;
+}
+.hot_movie_bottom{
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+}
+.hot_movie_bottom a{
+	border: 1px solid red;
+	width: 128px;
+}
+.content_right{
+	margin-left: 20px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid red;
+	flex: 1;
+}
+/*nav{
 	flex: 1;
 	display: flex;
 	background: #F0F3F5;
 	height:14px
 }
 .nav_left{
+	border: 1px solid red;
 	flex: 4;
 	justify-content: flex-end;
 	display: flex;
 	align-items: center;
 }
 .common_width{
+	border: 1px solid darkblue;
 	width: 950px;
 	justify-content: space-between;
 	display: flex;
@@ -116,12 +256,9 @@ nav{
 }
 .nav_right{
 	flex: 0.8;
-}
+}*/
 
-others{
-	border: 1px solid red;
-	flex: 14;
-}
+
 footer{
 	flex: 5;
 }
