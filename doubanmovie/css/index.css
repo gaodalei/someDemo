@@ -109,7 +109,7 @@ main{
 }
 .content_left{
 	border: 1px solid red;
-	flex: 2;
+	width: 590px;
 	display: flex;
 	flex-direction: column;
 	margin-right: 20px;
@@ -152,19 +152,42 @@ main{
 }
 .hot_movie_bottom{
 	height: 300px;
+	width: 588px;
 	display: flex;
-	justify-content: space-between;
+	overflow: hidden;
+	position: relative;
 }
-.hot_movie_bottom a{
-	border: 1px solid red;
+.cf1,.cf2,.cf3,.cf4,.cf5{
+	width: 588px;
+	height: 300px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+.cf1{
+}
+.cf2{
+}
+.cf3{
+}
+.cf4{
+}
+.cf5{
+}
+.hot_pic{
+	display: block;
+	float: left;
 	width: 128px;
+	height: 300px;
+	margin: 0px 0px 0px 17px;
 }
 .content_right{
+	flex: 1;
 	margin-left: 20px;
 	display: flex;
 	flex-direction: column;
 	border: 1px solid red;
-	flex: 1;
 }
 /*nav{
 	flex: 1;
