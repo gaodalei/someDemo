@@ -6,7 +6,10 @@ $.ajax({
 	success:function(data){
 		for (var i = 0; i < 20; i++) {
 			var url=data.subjects[i].images.medium;
-			$(".hot_pic").eq(i).css("background","url("+url+")");
+			$(".hot_pic").eq(i).css({
+				"background":"url("+url+") center no-repeat",
+				"background-size":"contain"
+				});
 		}
 //		$(".hot_pic").css("background","url("+url+")");
 	}

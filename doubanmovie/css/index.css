@@ -181,6 +181,7 @@ main{
 	width: 128px;
 	height: 300px;
 	margin: 0px 0px 0px 17px;
+	background-size:cover ;
 }
 .content_right{
 	flex: 1;
